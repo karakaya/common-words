@@ -34,7 +34,7 @@ func main() {
 	for scanner.Scan() {
 
 		counter += 1
-		fmt.Println(scanner.Text(), counter)
+		fmt.Println(scanner.Text())
 		status := confirm("Do you know this word?")
 		if status == "No" {
 			fileMemorize.WriteString(scanner.Text() + "\n")
